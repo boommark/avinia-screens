@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>P27 · Share by QR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles/tokens.css"><link rel="stylesheet" href="../styles/app.css">
+<script src="../assets/icons.js" defer></script>
+</head>
+<body>
+<main class="phone canvas">
+  <header class="subbar"><span class="back"><i data-i="chevron-left"></i></span><h2>Share my record</h2></header>
+  <section class="scroll">
+    <div class="card pad center">
+      <svg id="qr" viewBox="0 0 29 29" width="176" height="176" style="display:block;margin:6px auto 12px" shape-rendering="crispEdges"></svg>
+      <div class="h3">Show this at the front desk</div>
+      <div class="chips" style="justify-content:center;margin-top:8px"><span class="chip green"><i data-i="eye"></i>View-only</span><span class="chip sample">Sample code</span></div>
+    </div>
+    <div class="stats" style="grid-template-columns:1fr 1fr;margin-top:8px">
+      <div class="stat"><div class="ic"><i data-i="clock"></i></div><div class="l">Valid until</div><div class="v">Wed 29 Oct</div></div>
+      <div class="stat"><div class="ic"><i data-i="eye"></i></div><div class="l">Opened</div><div class="v">1 time</div></div>
+    </div>
+    <p class="eyebrow">Who opened it</p>
+    <div class="card">
+      <div class="row" style="align-items:flex-start"><span class="tile"><i data-i="building"></i></span><div class="txt"><div class="t">Lakeview Pulmonology</div><div class="d">Imported 1,284 items into their system · Thu 23 Oct, 10:02 AM</div></div></div>
+      <div class="row"><span class="tile grey"><i data-i="users"></i></span><div class="txt"><div class="t" style="font-weight:500">Nobody else</div><div class="d">Every opening is listed here</div></div></div>
+    </div>
+  </section>
+  <footer class="dock">
+    <button class="btn danger">Stop sharing</button>
+  </footer>
+</main>
+<script>
+(function(){var n=29,s='',r=7;function f(x,y){for(var i=0;i<7;i++)for(var j=0;j<7;j++){var e=i==0||j==0||i==6||j==6||(i>1&&i<5&&j>1&&j<5);if(e)s+='<rect x="'+(x+i)+'" y="'+(y+j)+'" width="1" height="1"/>';}}
+f(0,0);f(22,0);f(0,22);var seed=12;function rnd(){seed=(seed*9301+49297)%233280;return seed/233280;}
+for(var x=0;x<n;x++)for(var y=0;y<n;y++){var inF=(x<8&&y<8)||(x>20&&y<8)||(x<8&&y>20);if(!inF&&rnd()>0.52)s+='<rect x="'+x+'" y="'+y+'" width="1" height="1"/>';}
+document.getElementById('qr').innerHTML='<g fill="#09090B">'+s+'</g>';})();
+</script>
+</body>
+</html>

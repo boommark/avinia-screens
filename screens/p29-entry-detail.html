@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>P29 · One entry, two sources</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles/tokens.css"><link rel="stylesheet" href="../styles/app.css">
+<script src="../assets/icons.js" defer></script>
+</head>
+<body>
+<main class="phone canvas">
+  <header class="subbar"><span class="back"><i data-i="chevron-left"></i></span><h2>Medicine</h2></header>
+  <section class="scroll">
+    <div class="card pad" style="display:flex;gap:12px;align-items:flex-start">
+      <span class="tile"><i data-i="pill"></i></span>
+      <div><div class="h3">Symbicort 160/4.5</div><div class="small">2 puffs twice daily · last filled 2 Oct</div>
+        <div class="chips" style="margin-top:8px"><span class="chip green">From your provider</span><span class="chip amber">From your plan</span></div></div>
+    </div>
+    <p class="eyebrow">Where this came from · 2 sources</p>
+    <div class="card">
+      <div class="row"><span class="tile"><i data-i="building"></i></span><div class="txt"><div class="t">Northgate Health</div><div class="d">Prescription · 2 Sep · "Symbicort 160/4.5"</div></div></div>
+      <div class="row"><span class="tile amber"><i data-i="shield"></i></span><div class="txt"><div class="t">Silver Ridge Medicare</div><div class="d">Pharmacy claim · 2 Oct · "budesonide/formoterol"</div></div></div>
+      <div class="row" style="background:var(--mint-100);border-radius:0 0 16px 16px"><span style="color:var(--green-600);width:18px;height:18px"><i data-i="check-circle"></i></span><div class="txt"><div class="t" style="font-weight:500;font-size:14px">You said these are the same</div></div><span class="textlink">Change</span></div>
+    </div>
+    <p class="eyebrow">Another entry, as received</p>
+    <div class="card pad">
+      <div style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:14px;font-weight:600;background:var(--fill);border-radius:8px;padding:8px 10px">NEB SOLN 2.5MG/3ML Q4H PRN</div>
+      <p class="small" style="margin-top:10px;color:var(--ink-3)">Shown as your hospital wrote it. We couldn't match it to a standard name yet; nothing is missing.</p>
+      <span class="chip green" style="margin-top:10px">From your provider</span>
+    </div>
+  </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>P26 · Share my record</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles/tokens.css"><link rel="stylesheet" href="../styles/app.css">
+<script src="../assets/icons.js" defer></script>
+</head>
+<body>
+<main class="phone canvas">
+  <header class="subbar"><span class="back"><i data-i="chevron-left"></i></span><h2>Share my record</h2></header>
+  <section class="scroll">
+    <p class="lead">Moving, or seeing someone new? Your whole record goes with you, in the format clinics' systems read.</p>
+    <p class="eyebrow">How to share</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+      <div class="card pad" style="border:1.5px solid var(--green-600);background:var(--mint-50)"><span class="tile"><i data-i="qr"></i></span><div class="t strong" style="margin-top:10px;font-size:15px">Show a QR code</div><div class="small">At the front desk</div></div>
+      <div class="card pad"><span class="tile grey"><i data-i="send"></i></span><div class="t strong" style="margin-top:10px;font-size:15px">Send to a clinic</div><div class="small">Straight into their system</div></div>
+    </div>
+    <p class="eyebrow">What to share</p>
+    <div class="card">
+      <div class="row"><div class="txt"><div class="t" style="font-weight:500">Conditions, medicines, allergies</div></div><span class="toggle on"></span></div>
+      <div class="row"><div class="txt"><div class="t" style="font-weight:500">Labs and immunizations</div></div><span class="toggle on"></span></div>
+      <div class="row"><div class="txt"><div class="t" style="font-weight:500">Visit notes</div></div><span class="toggle on"></span></div>
+      <div class="row"><div class="txt"><div class="t" style="font-weight:500">Symptoms you logged</div><div class="d">Includes what you told Nia</div></div><span class="toggle"></span></div>
+    </div>
+    <div class="note grey" style="margin-top:12px"><i data-i="clock"></i><span>View-only. The link works for 7 days, you'll see who opens it, and you can stop sharing at any time.</span></div>
+  </section>
+  <footer class="dock">
+    <button class="btn primary">Create QR code</button>
+    <button class="btn outline"><i data-i="phone"></i>Call Dr Lee's office</button>
+  </footer>
+</main>
+</body>
+</html>

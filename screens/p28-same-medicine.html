@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>P28 · Is this the same medicine?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles/tokens.css"><link rel="stylesheet" href="../styles/app.css">
+<script src="../assets/icons.js" defer></script>
+</head>
+<body>
+<main class="phone canvas">
+  <header class="subbar"><span class="back"><i data-i="chevron-left"></i></span><h2>Check your record</h2></header>
+  <section class="scroll">
+    <h1 class="h2">Is this the same medicine?</h1>
+    <p class="lead" style="margin-top:6px">Your hospital and your health plan each list it. If they are the same, you'll see one entry.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:16px">
+      <div class="card pad"><span class="tile"><i data-i="building"></i></span><div class="strong" style="margin-top:10px;font-size:15px;line-height:1.3">Symbicort 160/4.5</div><div class="small">2 puffs twice daily</div><div class="small">Prescribed 2 Sep</div><span class="chip green" style="margin-top:10px">From your provider</span></div>
+      <div class="card pad"><span class="tile amber"><i data-i="shield"></i></span><div class="strong" style="margin-top:10px;font-size:15px;line-height:1.3">Budesonide and formoterol 160/4.5</div><div class="small">Filled 2 Oct · 30 days</div><span class="chip amber" style="margin-top:10px">From your plan</span></div>
+    </div>
+    <div class="note grey" style="margin-top:12px"><i data-i="info"></i><span>Nothing is on hold until you answer. Your answer only changes what you see. Dr Lee still sees both records as they came in, and you can change your answer any time.</span></div>
+  </section>
+  <footer class="dock">
+    <button class="btn primary">Same medicine</button>
+    <button class="btn quiet">Different medicines</button>
+    <button class="btn text">Not now</button>
+  </footer>
+</main>
+</body>
+</html>

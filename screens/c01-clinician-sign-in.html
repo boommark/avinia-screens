@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C01 · Clinician sign in</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles/tokens.css"><link rel="stylesheet" href="../styles/app.css">
+<script src="../assets/icons.js" defer></script>
+</head>
+<body>
+<main class="desktop">
+  <aside style="width:540px;background:var(--gradient-task);padding:48px 56px;display:flex;flex-direction:column;border-right:1px solid var(--line)">
+    <span class="brand" style="font-size:18px"><img src="../assets/avinia-mark.svg" alt="" style="width:26px;height:26px">Avinia · Clinician</span>
+    <h1 class="h1" style="font-size:38px;margin-top:72px;max-width:420px">See what your patients told Nia, before they walk in</h1>
+    <div class="stack" style="margin-top:32px">
+      <div class="card" style="background:rgba(255,255,255,0.85)"><div class="row"><span class="tile"><i data-i="clipboard"></i></span><div class="txt"><div class="t">Pre-visit briefs with sources</div><div class="d">Every line shows where it came from</div></div></div></div>
+      <div class="card" style="background:rgba(255,255,255,0.85)"><div class="row"><span class="tile"><i data-i="shield"></i></span><div class="txt"><div class="t">Safety checks at prescribing</div><div class="d">Interactions and plan coverage, before you sign</div></div></div></div>
+      <div class="card" style="background:rgba(255,255,255,0.85)"><div class="row"><span class="tile"><i data-i="inbox"></i></span><div class="txt"><div class="t">An inbox where Avinia drafts and you decide</div><div class="d">Nothing is sent without you</div></div></div></div>
+    </div>
+    <div style="margin-top:auto"><span class="chip sample">Sandbox mode · sample data only</span></div>
+  </aside>
+  <section style="flex:1;display:grid;place-items:center;background:#fff">
+    <div style="width:420px">
+      <h2 class="h2">Sign in</h2>
+      <p class="lead" style="margin-top:6px">Use your organization's account.</p>
+      <div class="field" style="margin-top:24px"><label>Work email</label><div class="input ph">you@clinic.org</div></div>
+      <button class="btn primary" style="margin-top:14px">Continue with your organization</button>
+      <div style="display:flex;align-items:center;gap:12px;margin:22px 0;color:var(--subtle);font-size:13px"><span style="flex:1;height:1px;background:var(--line)"></span>or<span style="flex:1;height:1px;background:var(--line)"></span></div>
+      <div class="card"><div class="row"><span class="avatar sm">DL</span><div class="txt"><div class="t">Explore as Dr Lee</div><div class="d">Sample clinic · Myra is on Friday's list</div></div><span class="chip sample">Sample data</span><i data-i="chevron-right"></i></div></div>
+      <p class="tiny" style="margin-top:28px">Avinia is in development. Patients decide what is shared with you.</p>
+    </div>
+  </section>
+</main>
+</body>
+</html>

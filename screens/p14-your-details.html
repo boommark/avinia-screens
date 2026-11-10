@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>P14 · Your details</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles/tokens.css"><link rel="stylesheet" href="../styles/app.css">
+<script src="../assets/icons.js" defer></script>
+</head>
+<body>
+<main class="phone canvas">
+  <header class="subbar"><span class="back"><i data-i="chevron-left"></i></span><h2>Your details</h2></header>
+  <section class="scroll">
+    <p class="lead">This is what your record says about you. New records are matched against it before anything is added.</p>
+    <p class="eyebrow">From your first source</p>
+    <div class="card">
+      <div class="kv"><span class="k">Name</span><span class="v lock">Myra Jones <i data-i="lock"></i></span></div>
+      <div class="kv"><span class="k">Date of birth</span><span class="v lock">March 14, 1972 <i data-i="lock"></i></span></div>
+      <div class="kv"><span class="k">Source</span><span class="v" style="font-weight:500">Northgate Health · via Fasten</span></div>
+    </div>
+    <p class="tiny" style="margin:8px 2px 0">These come from your record, so you can't type them in. If one is wrong, ask Northgate Health to correct it.</p>
+    <p class="eyebrow">Held connection</p>
+    <div class="card amber pad">
+      <div style="display:flex;gap:12px"><span class="tile amber" style="background:#fff"><i data-i="lock"></i></span>
+        <div><div class="t strong" style="font-size:15px">Westside Clinic portal</div><div class="small">Held on 2 Nov · nothing was added</div></div></div>
+      <p class="body" style="margin-top:10px;font-size:14px">Its patient didn't match these details, so nothing from it was added, and it never will be. Remove it and connect again with your own login at that place.</p>
+      <button class="btn quiet" style="margin-top:12px">Remove it and connect again</button>
+    </div>
+    <p class="tiny" style="margin:10px 2px 0">A sample patient can't remove her first source.</p>
+  </section>
+</main>
+</body>
+</html>

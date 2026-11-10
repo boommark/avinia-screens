@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A01 · Super admin review items</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles/tokens.css"><link rel="stylesheet" href="../styles/app.css">
+<script src="../assets/icons.js" defer></script>
+</head>
+<body>
+<main class="desktop">
+  <aside style="width:264px;background:#fff;border-right:1px solid var(--line);padding:18px 12px;display:flex;flex-direction:column">
+    <span class="brand" style="padding:4px 8px 18px"><img src="../assets/avinia-mark.svg" alt="">Avinia · Super admin</span>
+    <div class="stack-sm" style="font-size:14px">
+      <div style="display:flex;gap:10px;align-items:center;padding:9px 10px;color:var(--ink-3)"><i data-i="building"></i>Organizations</div>
+      <div style="display:flex;gap:10px;align-items:center;padding:9px 10px;color:var(--ink-3)"><i data-i="settings"></i>Capabilities</div>
+      <div style="display:flex;gap:10px;align-items:center;padding:9px 10px;border-radius:10px;background:var(--mint-100);color:var(--green-accent);font-weight:600"><i data-i="list"></i><span style="white-space:nowrap">Clinical records · review</span><span class="chip" style="margin-left:auto;background:var(--green-accent);color:#fff;height:20px;padding:0 7px">4</span></div>
+      <div style="display:flex;gap:10px;align-items:center;padding:9px 10px;color:var(--ink-3)"><i data-i="activity"></i>Data quality</div>
+      <div style="display:flex;gap:10px;align-items:center;padding:9px 10px;color:var(--ink-3)"><i data-i="file"></i>Audit</div>
+    </div>
+    <div style="margin-top:auto;display:flex;align-items:center;gap:8px;padding:10px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-3)"><span class="avatar sm grey" style="width:28px;height:28px;font-size:11px">OA</span>Ops admin<span style="margin-left:auto;display:flex;gap:10px;color:var(--muted)"><i data-i="settings"></i><i data-i="logout"></i></span></div>
+  </aside>
+  <section style="flex:1;padding:28px 32px;overflow:hidden">
+    <div style="display:flex;align-items:center;gap:10px"><h1 class="h2">Review items</h1><span class="chip sample">Staging · synthetic organizations</span></div>
+    <p class="small" style="margin-top:4px">Record IDs only. No record contents are shown here.</p>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:18px">
+      <div class="seg" style="width:600px;white-space:nowrap"><span class="on">Open · 4</span><span>Waiting on someone else · 2</span><span>Resolved</span></div>
+      <span class="chip outline"><i data-i="search"></i>Search record ID</span>
+    </div>
+    <div class="stats" style="grid-template-columns:repeat(4,1fr);margin-top:16px">
+      <div class="stat"><div class="l">Open</div><div class="v">4</div></div>
+      <div class="stat"><div class="l">Due this week</div><div class="v">1</div></div>
+      <div class="stat"><div class="l">Oldest open</div><div class="v">6 days</div></div>
+      <div class="stat"><div class="l">Resolved this month</div><div class="v">11</div></div>
+    </div>
+    <div class="card" style="margin-top:16px;overflow:hidden">
+      <table style="width:100%;border-collapse:collapse;font-size:13.5px">
+        <thead><tr style="background:var(--canvas);text-align:left">
+          <th class="eyebrow" style="margin:0;padding:10px 16px">Kind</th><th class="eyebrow" style="padding:10px 12px">Record ID</th><th class="eyebrow" style="padding:10px 12px">Owner</th><th class="eyebrow" style="padding:10px 12px">Due</th><th class="eyebrow" style="padding:10px 16px;text-align:right">Action</th></tr></thead>
+        <tbody>
+          <tr style="border-top:1px solid var(--line)"><td style="padding:12px 16px"><div class="strong">Identity hold</div><div class="tiny">Fasten connection · conn_41c8</div></td><td style="padding:12px;font-family:ui-monospace,Menlo,monospace;font-size:12.5px">pt_8f2a91</td><td style="padding:12px">Operations</td><td style="padding:12px;color:var(--muted)">None</td><td style="padding:12px 16px;text-align:right;white-space:nowrap"><button class="btn quiet sm">Discard, with reason</button></td></tr>
+          <tr style="border-top:1px solid var(--line)"><td style="padding:12px 16px"><div class="strong">Held removal</div><div class="tiny">Export would remove 31% of records</div></td><td style="padding:12px;font-family:ui-monospace,Menlo,monospace;font-size:12.5px">pt_3c9e07</td><td style="padding:12px">Super admin</td><td style="padding:12px;color:var(--muted)">None</td><td style="padding:12px 16px;text-align:right;white-space:nowrap"><button class="btn primary sm">Apply</button> <button class="btn quiet sm">Keep records</button></td></tr>
+          <tr style="border-top:1px solid var(--line)"><td style="padding:12px 16px"><div class="strong">Possible duplicate</div><div class="tiny">2 records · rules v2</div></td><td style="padding:12px;font-family:ui-monospace,Menlo,monospace;font-size:12.5px">pt_3c9e07</td><td style="padding:12px">Super admin (Staging)</td><td style="padding:12px;color:var(--muted)">None</td><td style="padding:12px 16px;text-align:right;white-space:nowrap"><button class="btn primary sm">Link</button> <button class="btn quiet sm">Keep separate</button></td></tr>
+          <tr style="border-top:1px solid var(--line)"><td style="padding:12px 16px"><div class="strong">Conflict</div><div class="tiny">Medication dose · rules v2</div></td><td style="padding:12px;font-family:ui-monospace,Menlo,monospace;font-size:12.5px">pt_1a7d55</td><td style="padding:12px">Provider · Maple Street<div class="tiny">patient asked</div></td><td style="padding:12px"><span class="chip amber">Mon 27 Oct</span></td><td style="padding:12px 16px;text-align:right;white-space:nowrap"><span class="small">Watching · escalates on due date</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card pad" style="margin-top:12px;display:flex;gap:12px;align-items:center"><span class="tile grey"><i data-i="database"></i></span><div><div class="strong" style="font-size:14px">Codes not matched this week</div><div class="small">Fasten · RxNorm 14 · LOINC 9 · SNOMED 3. Patients no longer see a "Needs review" count for these; their records show them as the source wrote them.</div></div></div>
+    <p class="tiny" style="margin-top:12px">Operations never decide a clinical question. An identity hold can be discarded, never released into an account.</p>
+  </section>
+</main>
+</body>
+</html>

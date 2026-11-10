@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>P31 · Records held back</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles/tokens.css"><link rel="stylesheet" href="../styles/app.css">
+<script src="../assets/icons.js" defer></script>
+</head>
+<body>
+<main class="phone task">
+  <header class="subbar"><span class="back"><i data-i="chevron-left"></i></span><h2>Your records</h2></header>
+  <section class="scroll">
+    <div class="hero" style="padding-top:12px">
+      <div class="badge" style="color:var(--ink-3)"><i data-i="lock"></i></div>
+      <h1 class="h2">We held back records that didn't match you</h1>
+      <p class="lead">The name or birth date in the records we received doesn't match your account. To keep your record private and correct, nothing was added.</p>
+    </div>
+    <p class="eyebrow">Your account says</p>
+    <div class="card">
+      <div class="kv"><span class="k">Name</span><span class="v">Myra Jones</span></div>
+      <div class="kv"><span class="k">Birth date</span><span class="v">March 14, 1972</span></div>
+    </div>
+    <div class="note grey" style="margin-top:12px;background:rgba(255,255,255,0.75)"><i data-i="info"></i><span>If your details are right, the portal you signed in to may belong to someone else. Our team is told, but no one can add those records to your account.</span></div>
+  </section>
+  <footer class="dock">
+    <button class="btn primary">Check my details</button>
+    <div style="display:flex;gap:8px"><button class="btn quiet" style="flex:1">Try again</button><button class="btn outline" style="flex:1.4;height:48px"><i data-i="phone"></i>Call the office</button></div>
+  </footer>
+</main>
+</body>
+</html>

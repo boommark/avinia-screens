@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>P30 · Which dose is right?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles/tokens.css"><link rel="stylesheet" href="../styles/app.css">
+<script src="../assets/icons.js" defer></script>
+</head>
+<body>
+<main class="phone canvas">
+  <header class="subbar"><span class="back"><i data-i="chevron-left"></i></span><h2>Medicine</h2></header>
+  <section class="scroll">
+    <h1 class="h2">Which atorvastatin dose is right?</h1>
+    <p class="lead" style="margin-top:6px">Your hospital and your health plan list different doses.</p>
+    <div class="card pad" style="margin-top:14px">
+      <button class="btn primary">Ask Dr Lee to check</button>
+      <p class="tiny center" style="margin-top:8px">Recommended. Dr Lee's team answers within 2 business days.</p>
+    </div>
+    <p class="eyebrow">Or, if you are sure, choose the one you take</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+      <div class="card pad"><div class="h3">10 mg nightly</div><div class="small">Prescribed 14 Aug</div><span class="chip green" style="margin:8px 0 12px">From your provider</span><button class="btn outline sm" style="width:100%">I take this one</button></div>
+      <div class="card pad"><div class="h3">20 mg nightly</div><div class="small">Filled 14 Sep · 90 days</div><span class="chip amber" style="margin:8px 0 12px">From your plan</span><button class="btn outline sm" style="width:100%">I take this one</button></div>
+    </div>
+    <div style="display:flex;gap:8px;margin-top:8px"><button class="btn quiet" style="flex:1.4;font-size:14px">Neither · I take something else</button><button class="btn text" style="flex:0.6;height:48px">Not now</button></div>
+    <p class="tiny" style="margin:10px 2px 0">Your answer is saved as "you confirmed" and Dr Lee is told. If you do neither within 2 business days, Dr Lee's team checks it. Everything else in the app works as usual meanwhile.</p>
+  </section>
+  <footer class="dock">
+    <button class="btn outline"><i data-i="phone"></i>Call Dr Lee's office</button>
+  </footer>
+</main>
+</body>
+</html>

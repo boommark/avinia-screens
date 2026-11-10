@@ -1,0 +1,55 @@
+/* Avinia HCS design tokens.
+   Values come from the approved staging app (Flutter build, Nov 2026), not the brand deck.
+   Primary #16A34A is the theme seed; #3E8440 is the active/selected accent. */
+:root {
+  /* Green */
+  --green-600: #16A34A;   /* primary: CTAs, Nia mic, "within range" */
+  --green-700: #15803D;   /* success text on mint */
+  --green-accent: #3E8440;/* selected tabs, active labels, icons, toggles, focus */
+  --green-deep: #14532D;
+  --mint-50: #F6FBF6;
+  --mint-100: #F2FAF1;    /* tinted surfaces, active tab pill */
+  --mint-150: #EEF9F0;    /* icon tiles */
+  --mint-200: #DFF1E7;
+  --mint-300: #C2E7BE;
+
+  /* Neutrals (zinc) */
+  --ink: #09090B;
+  --ink-2: #18181B;
+  --ink-3: #3F3F46;
+  --muted: #71717A;
+  --subtle: #A1A1AA;
+  --line: #E4E4E7;
+  --fill: #F4F4F5;
+  --canvas: #FAFAFA;
+  --white: #FFFFFF;
+
+  /* Status */
+  --amber-ink: #996C00;
+  --amber-bg: #FFF8E8;
+  --amber-line: #F8D88B;
+  --red-ink: #A32626;
+  --red: #DC4C4C;
+  --red-bg: #FBE4E4;
+  --red-soft: #FCEDEC;
+  --rose-tile: #FDEEF4;
+  --rose-ink: #BE185D;
+  --coral: #E8A794;       /* Nia "pre-filled" outline */
+  --coral-bg: #FDF7F3;
+  --sandbox-bg: #FFF1E7;
+  --sandbox-ink: #9A3412;
+
+  /* Gradient used on single-task screens (S05, S23, S24) */
+  --gradient-task: linear-gradient(180deg, #FFFFFF 0%, #EEF7EA 30%, #D3E8CC 66%, #D8CAA8 100%);
+
+  /* Type */
+  --font: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Shape */
+  --r-card: 16px;
+  --r-btn: 12px;
+  --r-tile: 12px;
+  --r-pill: 999px;
+  --shadow-card: 0 1px 2px rgba(9, 9, 11, 0.04);
+  --shadow-float: 0 6px 18px rgba(22, 163, 74, 0.28);
+}

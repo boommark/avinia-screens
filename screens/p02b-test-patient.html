@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>P02 · Choose a test patient</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles/tokens.css"><link rel="stylesheet" href="../styles/app.css">
+<script src="../assets/icons.js" defer></script>
+</head>
+<body>
+<main class="phone">
+  <header class="subbar"><span class="back"><i data-i="chevron-left"></i></span></header>
+  <section class="scroll">
+    <h1 class="h1">Choose a test patient</h1>
+    <p class="lead" style="margin-top:8px">In Sandbox mode, Fasten returns these test patients only. Pick one, then sign in to its test portal in the next step.</p>
+    <p class="eyebrow">Fasten test patients</p>
+    <div class="stack-sm">
+      <div class="card" style="border:1.5px solid var(--green-600);background:var(--mint-50)">
+        <div class="row"><span class="avatar">MJ</span><div class="txt"><div class="t">Myra Jones</div><div class="d">Type 2 diabetes, mild asthma, colon cancer follow-up</div></div><span class="radio on"></span></div>
+      </div>
+      <div class="card"><div class="row"><span class="avatar grey">BM</span><div class="txt"><div class="t">Bernice Maxwell</div><div class="d">Hypertension, allergies</div></div><span class="radio"></span></div></div>
+      <div class="card"><div class="row"><span class="avatar grey">LC</span><div class="txt"><div class="t">Lennie Connell</div><div class="d">Atrial fibrillation</div></div><span class="radio"></span></div></div>
+    </div>
+    <div class="note grey" style="margin-top:16px"><i data-i="lock"></i><span>Read-only. Avinia can read the test record; it never changes it. Importing takes about a minute.</span></div>
+  </section>
+  <footer class="dock">
+    <button class="btn primary">Continue</button>
+    <button class="btn text">Not now</button>
+  </footer>
+</main>
+</body>
+</html>

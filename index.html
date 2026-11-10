@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Avinia Screen Redesign</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/tokens.css">
+<style>
+  body { margin: 0; font-family: var(--font); background: var(--canvas); color: var(--ink); }
+  header { padding: 40px 24px 8px; max-width: 1200px; margin: 0 auto; }
+  h1 { font-size: 30px; letter-spacing: -0.02em; margin: 0; }
+  p.lead { color: var(--muted); font-size: 15px; max-width: 760px; line-height: 1.5; }
+  .note { font-size: 13px; color: var(--amber-ink); background: var(--amber-bg); border: 1px solid var(--amber-line); border-radius: 10px; padding: 10px 12px; max-width: 760px; }
+  main { max-width: 1200px; margin: 0 auto; padding: 8px 24px 64px; }
+  h2 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 36px 0 12px; }
+  .screen { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 18px; margin-bottom: 14px; }
+  .screen h3 { margin: 0 0 4px; font-size: 17px; }
+  .screen ul { margin: 6px 0 12px; padding-left: 18px; color: var(--ink-3); font-size: 14px; line-height: 1.5; }
+  .frames { display: flex; gap: 14px; overflow-x: auto; padding-bottom: 4px; }
+  .frames a { text-decoration: none; color: var(--muted); font-size: 12px; flex: none; }
+  .frames img { display: block; height: 420px; border: 1px solid var(--line); border-radius: 18px; margin-bottom: 6px; }
+  .frames img.wide { height: 300px; border-radius: 10px; }
+  .id { display: inline-block; font-size: 12px; font-weight: 700; color: var(--green-700); background: var(--mint-150); border-radius: 999px; padding: 2px 8px; margin-right: 6px; }
+  @media (max-width: 600px) { .frames img { height: 320px; } .frames img.wide { height: 180px; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Avinia screen redesign</h1>
+  <p class="lead">The 18 screens with no approved staging version, rebuilt in the approved staging design (primary #16A34A, accent #3E8440, zinc neutrals, Inter). Each frame is plain HTML and CSS: open any screen to see the code, or click a frame to open the live screen.</p>
+  <p class="note">Avinia is in development. Every person, clinic and record on these screens is synthetic sample data. Nia does not diagnose or give medical advice; the care team makes clinical decisions.</p>
+</header>
+<main id="list"></main>
+<script>
+fetch("screens.json").then(r => r.json()).then(items => {
+  const list = document.getElementById("list"); let group = "";
+  items.forEach(s => {
+    if (s.group !== group) { group = s.group; list.insertAdjacentHTML("beforeend", `<h2>${group}</h2>`); }
+    const frames = s.files.map(([f, label]) => `<a href="screens/${f}.html"><img class="${/^(c|a)0/.test(f) ? "wide" : ""}" src="renders/${f}.png" alt="${s.title}: ${label}" loading="lazy">${label}</a>`).join("");
+    list.insertAdjacentHTML("beforeend", `<section class="screen"><h3><span class="id">${s.id}</span>${s.title}</h3><ul>${s.changes.map(c => `<li>${c}</li>`).join("")}</ul><div class="frames">${frames}</div></section>`);
+  });
+});
+</script>
+</body>
+</html>
