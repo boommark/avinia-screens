@@ -2,7 +2,7 @@
 
 The 18 Avinia HCS screens that had no approved staging version, rebuilt in the approved staging design. Every screen is plain HTML and CSS with no build step, so it can be read, reviewed or ported straight into the Flutter app.
 
-**Live gallery:** https://boommark.github.io/avinia-screens/
+**Browse:** open [`index.html`](index.html) locally for the gallery, or any file in [`screens/`](screens). Renders are in [`renders/`](renders). To publish the gallery as a website, turn on GitHub Pages (Settings, Pages, branch `main`, folder `/`); it will appear at https://boommark.github.io/avinia-screens/.
 
 > Avinia is in development. Every person, clinic and record here is synthetic sample data. Nia does not diagnose or give medical advice; the care team makes clinical decisions.
 
