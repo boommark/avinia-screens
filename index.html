@@ -31,15 +31,16 @@
   <p class="note">Avinia is in development. Every person, clinic and record on these screens is synthetic sample data. Nia does not diagnose or give medical advice; the care team makes clinical decisions.</p>
 </header>
 <main id="list"></main>
+<script src="screens-data.js"></script>
 <script>
-fetch("screens.json").then(r => r.json()).then(items => {
+(function (items) {
   const list = document.getElementById("list"); let group = "";
   items.forEach(s => {
     if (s.group !== group) { group = s.group; list.insertAdjacentHTML("beforeend", `<h2>${group}</h2>`); }
     const frames = s.files.map(([f, label]) => `<a href="screens/${f}.html"><img class="${/^(c|a)0/.test(f) ? "wide" : ""}" src="renders/${f}.png" alt="${s.title}: ${label}" loading="lazy">${label}</a>`).join("");
     list.insertAdjacentHTML("beforeend", `<section class="screen"><h3><span class="id">${s.id}</span>${s.title}</h3><ul>${s.changes.map(c => `<li>${c}</li>`).join("")}</ul><div class="frames">${frames}</div></section>`);
   });
-});
+})(window.SCREENS);
 </script>
 </body>
 </html>

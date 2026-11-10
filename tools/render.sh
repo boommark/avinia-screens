@@ -2,6 +2,8 @@
 # Render every screen (or the ones passed) to renders/<name>.png at 2x with headless Chrome.
 set -euo pipefail
 cd "$(dirname "$0")/.."
+# Keep the gallery data in sync with screens.json
+python3 -c "import json;open('screens-data.js','w').write('window.SCREENS = '+json.dumps(json.load(open('screens.json')),indent=1)+';\\n')"
 CHROME="${CHROME:-/Applications/Google Chrome.app/Contents/MacOS/Google Chrome}"
 files=("$@"); [ ${#files[@]} -eq 0 ] && files=(screens/*.html)
 for f in "${files[@]}"; do
